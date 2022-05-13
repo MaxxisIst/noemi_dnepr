@@ -1,7 +1,7 @@
 import gulp from 'gulp';
 import browserSync from 'browser-sync';
 import del from 'del';
-import gulpImg from 'gulp-image';
+// import gulpImg from 'gulp-image';
 
 const html = () => gulp
     .src('src/*.html')

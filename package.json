@@ -1,8 +1,9 @@
 {
   "name": "noemi_dnepr",
   "version": "1.0.0",
-  "description": "diploma_project",
+  "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,6 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/MaxxisIst/noemi_dnepr.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -17,13 +19,9 @@
   },
   "homepage": "https://github.com/MaxxisIst/noemi_dnepr#readme",
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "browser-sync": "^2.27.7",
+    "browser-sync": "^2.27.9",
     "del": "^6.0.0",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-cssimport": "^7.0.0",
-    "gulp-image": "^6.3.1",
-    "webpack": "^5.67.0",
-    "webpack-stream": "^7.0.0"
+    "gulp": "^4.0.2",
+    "gulp-image": "^6.3.1"
   }
 }

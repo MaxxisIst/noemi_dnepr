@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Playfair+Display&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="styles/normalize.css"> -->
     <link rel="stylesheet" href="styles/index.min.css">
 </head>
 <body>
@@ -17,52 +18,95 @@
                 <img src="images/logos/logo.png" alt="Логотип салона красоты Noemi Днепр">
             </a>
             <nav class="navigation header__navigation">
-                <ul>
-                    <li class="navigatiom__item">
-                        <a class="navigatiom__link" href="#" rel="noopener noreferer" title="#">Услуги и цены</a>
-                    </li>
-                    <li class="navigatiom__item">
-                        <a class="navigatiom__link" href="#" rel="noopener noreferer" title="#">Галерея</a>
-                    </li>
-                    <li class="navigatiom__item">
-                        <a class="navigatiom__link" href="#" rel="noopener noreferer" title="#">Акции</a>
-                    </li>
-                    <li class="navigatiom__item">
-                        <a class="navigatiom__link" href="#" rel="noopener noreferer" title="#">Партнеры</a>
-                    </li>
-                    <li class="navigatiom__item">
-                        <a class="navigatiom__link" href="#" rel="noopener noreferer" title="#">Отзывы</a>
-                    </li>
-                    <li class="navigatiom__item">
-                        <a class="navigatiom__link" href="#" rel="noopener noreferer" title="#">Статьи</a>
-                    </li>
-                    <li class="navigatiom__item">
-                        <a class="navigatiom__link" href="#" rel="noopener noreferer" title="#">Контакты</a>
-                    </li>
-                </ul>
+                <button class="navigation__btn">
+                    <span class="navigation__btn_line">Меню/Навигация</span>
+                </button>
+                <div class="navigation__mobile-wrapper">
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#" rel="noopener noreferer" title="#">
+                                Услуги и цены
+                            </a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#" rel="noopener noreferer" title="#">
+                                Галерея
+                            </a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#" rel="noopener noreferer" title="#">
+                                Акции
+                            </a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#" rel="noopener noreferer" title="#">
+                                Партнеры
+                            </a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#" rel="noopener noreferer" title="#">
+                                Отзывы
+                            </a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#" rel="noopener noreferer" title="#">
+                                Статьи
+                            </a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#" rel="noopener noreferer" title="#">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="header__social-list navigation__social">
+                        <li class="header__social-item">
+                            <a class="header__social-link header__social-instagram" href="#" rel="noopener noreferer" title="#" target="_blank">
+                            </a>
+                        </li>
+                        <li class="header__social-item">
+                            <a class="header__social-link header__social-telegram" href="#" rel="noopener noreferer" title="#" target="_blank">
+                            </a>
+                        </li>
+                        <li class="header__social-item">
+                            <a class="header__social-link header__social-viber" href="#" rel="noopener noreferer" title="#" target="_blank">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
             <ul class="header__contacts-list">
                 <li class="header__contacts-item">
-                    <a class="header__contacts-link" href="mailto:info@beautylight.ua" rel="noopener noreferer" title="#">info@beautylight.ua</a>
+                    <a class="header__contacts-link" href="mailto:info@beautylight.ua" rel="noopener noreferer" title="#">
+                        info@beautylight.ua
+                    </a>
                 </li>
                 <li class="header__contacts-item">
-                    <a class="header__contacts-link" href="tel:+380990000000" rel="noopener noreferer" title="#">+3 (8099) 000-00-00</a>
+                    <a class="header__contacts-link" href="tel:+380990000000" rel="noopener noreferer" title="#">
+                        +3 (8099) 000-00-00
+                    </a>
                 </li>
             </ul>
-            <ul class="header__control-list">
-                <li class="header__control-item">
-                    <button class="header__btn header__btn-cart"></button>
+            <ul class="header__social-list">
+                <li class="header__social-item">
+                    <a class="header__social-link header__social-instagram" href="#" rel="noopener noreferer" title="#" target="_blank">
+                    </a>
                 </li>
-                <li class="header__control-item">
-                    <a class="header__social-link" href="#" rel="noopener noreferer" title="#" target="_blank"></a>
+                <li class="header__social-item">
+                    <a class="header__social-link header__social-telegram" href="#" rel="noopener noreferer" title="#" target="_blank">
+                    </a>
                 </li>
-                <li class="header__control-item">
-                    <a class="header__social-link" href="#" rel="noopener noreferer" title="#" target="_blank"></a>
-                </li>
-                <li class="header__control-item">
-                    <a class="header__social-link" href="#" rel="noopener noreferer" title="#" target="_blank"></a>
+                <li class="header__social-item">
+                    <a class="header__social-link header__social-viber" href="#" rel="noopener noreferer" title="#" target="_blank">
+                    </a>
                 </li>
             </ul>
+
+            <div class="header__btn-cart-wrapper">
+                <button class="header__btn-cart"></button>
+            </div>
+
+            </button>
         </div>
     </header>
     <main>
@@ -124,8 +168,8 @@
             </div>
         </section>
         <section class="discount">
-            <h2>Акции, скидки и события!</h2>
             <div class="container discount__container">
+                <h2>Акции, скидки и события!</h2>
                 <div class="discount__slider swiper">
                     <ul class="discount__slider-wrapper swiper-wrapper">
                         <li class="discount__slider-item swiper-slide">
@@ -211,49 +255,6 @@
                 </div>
             </div>
         </section>
-        <section class="sponsors">
-            <h2>Наши спонсоры и партнеры</h2>
-            <div class="container sponsors__container">
-                <div class="sponsors__slider swiper">
-                    <ul class="sponsors__slider-wrapper swiper-wrapper">
-                        <li class="sponsors__slider-item swiper-slide">
-                            <a class="sponsors__slider-link" href="#" title="#" rel="noopener noreferer" target="_blank">
-                                <img class="sponsors__slider-image" src="images/" alt="#">
-                            </a>
-                            <a class="sponsors__slider-link" href="#" title="#" rel="noopener noreferer" target="_blank">
-                                <img class="sponsors__slider-image" src="images/" alt="#">
-                            </a>
-                            <a class="sponsors__slider-link" href="#" title="#" rel="noopener noreferer" target="_blank">
-                                <img class="sponsors__slider-image" src="images/" alt="#">
-                            </a>
-                        </li>
-                        <li class="sponsors__slider-item swiper-slide">
-                            <a class="sponsors__slider-link" href="#" title="#" rel="noopener noreferer" target="_blank">
-                                <img class="sponsors__slider-image" src="images/" alt="#">
-                            </a>
-                            <a class="sponsors__slider-link" href="#" title="#" rel="noopener noreferer" target="_blank">
-                                <img class="sponsors__slider-image" src="images/" alt="#">
-                            </a>
-                            <a class="sponsors__slider-link" href="#" title="#" rel="noopener noreferer" target="_blank">
-                                <img class="sponsors__slider-image" src="images/" alt="#">
-                            </a>
-                        </li>
-                        <li class="sponsors__slider-item swiper-slide">
-                            <a class="sponsors__slider-link" href="#" title="#" rel="noopener noreferer" target="_blank">
-                                <img class="sponsors__slider-image" src="images/" alt="#">
-                            </a>
-                            <a class="sponsors__slider-link" href="#" title="#" rel="noopener noreferer" target="_blank">
-                                <img class="sponsors__slider-image" src="images/" alt="#">
-                            </a>
-                            <a class="sponsors__slider-link" href="#" title="#" rel="noopener noreferer" target="_blank">
-                                <img class="sponsors__slider-image" src="images/" alt="#">
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="sponsors__slider-pagination"></div>
-                </div>
-            </div>
-        </section>
         <section class="work">
             <div class="container work__container">
                 <div class="work__gallery">
@@ -302,6 +303,49 @@
                         <source type="image/webp" srcset="images/.webp 1x, images/.webp 2x">
                         <img src="images/.jpg" srcset="images/.jpg 2x" alt="#" title="#" class="work__gallery-image">
                     </picture>
+                </div>
+            </div>
+        </section>
+        <section class="sponsors">
+            <div class="container sponsors__container">
+                <h2>Наши спонсоры и партнеры</h2>
+                <div class="sponsors__slider swiper">
+                    <ul class="sponsors__slider-wrapper swiper-wrapper">
+                        <li class="sponsors__slider-item swiper-slide">
+                            <a class="sponsors__slider-link" href="#" title="#" rel="noopener noreferer" target="_blank">
+                                <img class="sponsors__slider-image" src="images/" alt="#">
+                            </a>
+                            <a class="sponsors__slider-link" href="#" title="#" rel="noopener noreferer" target="_blank">
+                                <img class="sponsors__slider-image" src="images/" alt="#">
+                            </a>
+                            <a class="sponsors__slider-link" href="#" title="#" rel="noopener noreferer" target="_blank">
+                                <img class="sponsors__slider-image" src="images/" alt="#">
+                            </a>
+                        </li>
+                        <li class="sponsors__slider-item swiper-slide">
+                            <a class="sponsors__slider-link" href="#" title="#" rel="noopener noreferer" target="_blank">
+                                <img class="sponsors__slider-image" src="images/" alt="#">
+                            </a>
+                            <a class="sponsors__slider-link" href="#" title="#" rel="noopener noreferer" target="_blank">
+                                <img class="sponsors__slider-image" src="images/" alt="#">
+                            </a>
+                            <a class="sponsors__slider-link" href="#" title="#" rel="noopener noreferer" target="_blank">
+                                <img class="sponsors__slider-image" src="images/" alt="#">
+                            </a>
+                        </li>
+                        <li class="sponsors__slider-item swiper-slide">
+                            <a class="sponsors__slider-link" href="#" title="#" rel="noopener noreferer" target="_blank">
+                                <img class="sponsors__slider-image" src="images/" alt="#">
+                            </a>
+                            <a class="sponsors__slider-link" href="#" title="#" rel="noopener noreferer" target="_blank">
+                                <img class="sponsors__slider-image" src="images/" alt="#">
+                            </a>
+                            <a class="sponsors__slider-link" href="#" title="#" rel="noopener noreferer" target="_blank">
+                                <img class="sponsors__slider-image" src="images/" alt="#">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="sponsors__slider-pagination"></div>
                 </div>
             </div>
         </section>

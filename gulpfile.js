@@ -9,7 +9,10 @@ const html = () => gulp
     .pipe(browserSync.stream());
 
 const css = () => gulp
-    .src('src/styles/index.min.css')
+    .src([
+        'src/styles/index.min.css',
+        'src/styles/normalize.css'
+    ])
     .pipe(gulp.dest('dist/styles'))
     .pipe(browserSync.stream());
 

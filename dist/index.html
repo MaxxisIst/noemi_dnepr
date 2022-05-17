@@ -8,20 +8,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Playfair+Display&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="styles/normalize.css"> -->
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/index.min.css">
 </head>
 <body>
     <header class="header">
         <div class="container header__container">
-            <a href="index.html" class="logo" title="#">
+            <a href="index.html" class="header__logo" title="#">
                 <img src="images/logos/logo.png" alt="Логотип салона красоты Noemi Днепр">
             </a>
-            <nav class="navigation header__navigation">
-                <button class="navigation__btn">
-                    <span class="navigation__btn_line">Меню/Навигация</span>
-                </button>
-                <div class="navigation__mobile-wrapper">
+            <div class="header__mobile-wrapper">
+                <nav class="navigation header__navigation">
                     <ul class="navigation__list">
                         <li class="navigation__item">
                             <a class="navigation__link" href="#" rel="noopener noreferer" title="#">
@@ -59,72 +56,73 @@
                             </a>
                         </li>
                     </ul>
-                    <ul class="header__social-list navigation__social">
-                        <li class="header__social-item">
-                            <a class="header__social-link header__social-instagram" href="#" rel="noopener noreferer" title="#" target="_blank">
-                            </a>
-                        </li>
-                        <li class="header__social-item">
-                            <a class="header__social-link header__social-telegram" href="#" rel="noopener noreferer" title="#" target="_blank">
-                            </a>
-                        </li>
-                        <li class="header__social-item">
-                            <a class="header__social-link header__social-viber" href="#" rel="noopener noreferer" title="#" target="_blank">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <ul class="header__contacts-list">
-                <li class="header__contacts-item">
-                    <a class="header__contacts-link" href="mailto:info@beautylight.ua" rel="noopener noreferer" title="#">
-                        info@beautylight.ua
-                    </a>
-                </li>
-                <li class="header__contacts-item">
-                    <a class="header__contacts-link" href="tel:+380990000000" rel="noopener noreferer" title="#">
-                        +3 (8099) 000-00-00
-                    </a>
-                </li>
-            </ul>
-            <ul class="header__social-list">
-                <li class="header__social-item">
-                    <a class="header__social-link header__social-instagram" href="#" rel="noopener noreferer" title="#" target="_blank">
-                    </a>
-                </li>
-                <li class="header__social-item">
-                    <a class="header__social-link header__social-telegram" href="#" rel="noopener noreferer" title="#" target="_blank">
-                    </a>
-                </li>
-                <li class="header__social-item">
-                    <a class="header__social-link header__social-viber" href="#" rel="noopener noreferer" title="#" target="_blank">
-                    </a>
-                </li>
-            </ul>
-
-            <div class="header__btn-cart-wrapper">
-                <button class="header__btn-cart"></button>
+                </nav>
+                <ul class="header__contacts-list">
+                    <li class="header__contacts-item">
+                        <a class="header__contacts-link" href="mailto:info@beautylight.ua" rel="noopener noreferer" title="#">
+                            info@beautylight.ua
+                        </a>
+                    </li>
+                    <li class="header__contacts-item">
+                        <a class="header__contacts-link" href="tel:+380990000000" rel="noopener noreferer" title="#">
+                            +3 (8099) 000-00-00
+                        </a>
+                    </li>
+                </ul>
+                <ul class="header__social-list">
+                    <li class="header__social-item">
+                        <a class="header__social-link header__social-instagram" href="#" rel="noopener noreferer" title="#" target="_blank">
+                        </a>
+                    </li>
+                    <li class="header__social-item">
+                        <a class="header__social-link header__social-telegram" href="#" rel="noopener noreferer" title="#" target="_blank">
+                        </a>
+                    </li>
+                    <li class="header__social-item">
+                        <a class="header__social-link header__social-viber" href="#" rel="noopener noreferer" title="#" target="_blank">
+                        </a>
+                    </li>
+                </ul>
             </div>
-
-            </button>
+            <ul class="header__control-list">
+                <li class="header__control-item">
+                    <button class="header__control-cart"></button>
+                </li>
+            </ul>
+        </div>
+        <div class="header__hamburger-menu hidden">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </header>
     <main>
         <section class="baner">
             <div class="container baner__container">
-                <h1 class="baner__title">Салон красоты Ноеми в Днепре</h1>
-                <ul class="baner__adventages-list">
-                    <li class="baner__adventages-item">Больше 1000 клиентов в месяц</li>
-                    <li class="baner__adventages-item">Работаем до последнего клиента</li>
-                    <li class="baner__adventages-item">Варим вкуснейший кофе</li>
-                    <li class="baner__adventages-item">Приходи и убедись сама</li>
-                </ul>
-                <button class="btn baner__btn" type="button">Записаться сейчас</button>
-                <picture>
-                    <source type="image/avif" srcset="images/baner/beauty_woman_1_1x.avif 1x, images/baner/beauty_woman_1_2x.avif 2x">
-                    <source type="image/webp" srcset="images/baner/beauty_woman_1_1x.webp 1x, images/baner/beauty_woman_1_2x.webp 2x">
-                    <img src="images/baner/beauty_woman_1_1x.jpg" srcset="images/baner/beauty_woman_1_2x.jpg 2x" alt="Портретное фото девушки" class="baner__image">
-                </picture>
+                <div class="baner__wrapper">
+                    <h1 class="baner__title">Салон красоты Ноеми в Днепре</h1>
+                    <ul class="baner__adventages-list">
+                        <li class="baner__adventages-item">
+                            <h4>Больше 1000 клиентов в месяц</h4>
+                            <img src="images/icons/clients.svg" alt="#">
+                        </li>
+                        <li class="baner__adventages-item">
+                            <h4>Работаем до последнего клиента</h4>
+                            <img src="images/icons/clock.svg" alt="#">
+                        </li>
+                        <li class="baner__adventages-item">
+                            <h4>Варим вкуснейший кофе</h4>
+                            <img src="images/icons/cup.svg" alt="#">
+                        </li>
+                        <li class="baner__adventages-item">
+                            <h4>Приходи и убедись сама</h4>
+                            <img src="images/icons/open_door.svg" alt="#">
+                        </li>
+                    </ul>
+                    <button class="btn baner__btn" type="button">Записаться сейчас</button>
+                </div>
+                <div class="baner__photo-wrapper">
+                </div>
             </div>
         </section>
         <section class="popular">
@@ -397,26 +395,6 @@
             </ul>
         </div>
     </footer>
-<svg class="hidden">
-    <symbol id="cart" viewBox="0 0 48 48">
-
-    </symbol>
-</svg>
-<svg class="hidden">
-    <symbol id="instagram" viewBox="0 0 48 48">
-
-    </symbol>
-</svg>
-<svg class="hidden">
-    <symbol id="viber" viewBox="0 0 48 48">
-
-    </symbol>
-</svg>
-<svg class="hidden">
-    <symbol id="telegram" viewBox="0 0 48 48">
-
-    </symbol>
-</svg>
 <script>
     /**
      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT
@@ -451,5 +429,6 @@
         comments powered by Disqus.
     </a>
 </noscript>
+<script src="scripts/index.js"></script>
 </body>
 </html>

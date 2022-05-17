@@ -1,0 +1,132 @@
+.baner {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 75px 50px 75px 0;
+    }
+    &__title {
+        font-family: Playfair Display, serif;
+        font-weight: 400;
+        font-size: 8rem;
+    }
+    &__adventages-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.6rem;
+    }
+    &__adventages-item {
+        text-align: center;
+        &>h4 {
+            width: 160px;
+            margin: 0 auto;
+        }
+    }
+    &__btn {
+        padding: 30px 10px;
+        max-width: 350px;
+    }
+    &__photo-wrapper {
+        background-image: image-set(url('../images/baner/beauty_woman_1_1x.avif') 1x,
+        url('../images/baner/beauty_woman_1_2x.avif') 2x,
+        url('../images/baner/beauty_woman_1_1x.webp') 1x,
+        url('../images/baner/beauty_woman_1_2x.webp') 2x,
+        url('../images/baner/beauty_woman_1_1x.jpg') 1x,
+        url('../images/baner/beauty_woman_1_2x.jpg') 2x);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        box-shadow: 2px 3px 10px $shadow;
+        min-width: 388px;
+        min-height: 649px;
+        border-radius: 50%;
+        filter: drop-shadow(0 0 20px $btn);
+        animation: baner-lighting 5s infinite linear;
+    }
+}
+@keyframes baner-lighting {
+    0% {
+        filter: drop-shadow(0 0 0 $btn);
+    }
+    50% {
+        filter: drop-shadow(0 0 30px $btn);
+    }
+    100% {
+        filter: drop-shadow(0 0 0 $btn);
+    }
+}
+@media (max-width: 1200px) {
+    .baner {
+        &__title {
+            font-size: 6rem;
+        }
+        &__wrapper {
+            padding: 50px 25px 50px 0;
+        }
+        &__adventages-item {
+            width: 50%;
+        }
+        &__btn {
+            padding: 20px 10px;
+            max-width: 250px;
+        }
+    }
+}
+@media (max-width: 1000px) {
+    .baner {
+        &__title {
+            font-size: 4rem;
+        }
+        &__wrapper {
+            padding-right: 10px;
+        }
+        &__photo-wrapper {
+            min-width: 320px;
+            min-height: 535px;
+        }
+    }
+}
+@media (max-width: 800px) {
+    .baner {
+        &__adventages-item>h4 {
+            font-size: 1.4rem;
+            width: 140px;
+        }
+        &__wrapper {
+            padding: 25px 10px 25px 0;
+            justify-content: space-between;
+        }
+        &__photo-wrapper {
+            min-width: 250px;
+            min-height: 418px;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .baner {
+        &__title {
+            font-size: 3rem;
+        }
+        &__container {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 30px;
+        }
+        &__wrapper {
+            padding: 0;
+            gap: 30px;
+            align-items: center;
+        }
+        &__photo-wrapper {
+            max-width: 250px;
+            max-height: 418px;
+        }
+    }
+}

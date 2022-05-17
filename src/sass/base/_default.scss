@@ -1,13 +1,15 @@
 html {
     font-family: Jost, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 62.5%;
+    font-weight: 500;
+    font-style: normal;
     line-height: 1;
     color: $text-1;
     box-sizing: border-box;
 }
 *, *:after, *:before{box-sizing: inherit;}
 body {
+    font-size: 1.8rem;
     min-width: 300px;
     min-height: 100vh;
     max-width: 100%;
@@ -82,4 +84,27 @@ iframe {
 section {
     padding-top: 50px;
 }
-
+.btn {
+    border: none;
+    border-radius: 25px;
+    color: $text-2;
+    background: linear-gradient(149deg, rgb(144, 38, 119) 20%, rgb(196, 204, 78) 42%, rgb(93, 55, 146) 72%, rgb(52, 160, 90) 100%) no-repeat center/cover fixed;    animation: bg-gradient 10s infinite linear;
+    background-size: 400%;
+    box-shadow: 2px 3px 10px $shadow;
+    background-color: transparent;
+    filter: drop-shadow(0 0 20px transparent);
+    transition: color .4s ease, background .4s ease, drop-shadow .4s ease;
+    &:hover {
+        color: $text-1;
+        background: $btn;
+        filter: drop-shadow(0 0 20px $btn);
+    }
+}
+@media (max-width: 1000px) {
+    body {
+        font-size: 1.6rem;
+    }
+    section {
+        padding-top: 25px;
+    }
+}

@@ -2,6 +2,14 @@
     box-shadow: 0 2px 10px $shadow;
     background-color: $header-bg;
     padding: 5px 0;
+    &__logo {
+        padding-right: 5px;
+    }
+    &__mobile-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     &__container {
         display: flex;
         justify-content: space-between;
@@ -9,6 +17,8 @@
     }
     &__contacts {
         &-list {
+            min-width: max-content;
+            padding: 0 5px;
             display: flex;
             flex-direction: column;
         }
@@ -16,6 +26,7 @@
             margin-bottom: 10px;
         }
         &-item {
+            text-align: center;
             position: relative;
             transition: color .4s ease;
             &::before {
@@ -41,39 +52,16 @@
                 }
         }
         &-link {
-            text-shadow: 0 0 10px transparent;
+            text-shadow: 2px 3px 10px $shadow;
             transition: text-shadow .4s ease;
             &:hover {
                 text-shadow: 0 0 10px $btn;
             }
         }
     }
-    &__btn-cart-wrapper {
-        background: linear-gradient(-149deg, rgb(144, 38, 119) 20%, rgb(196, 204, 78) 42%, rgb(93, 55, 146) 72%, rgb(52, 160, 90) 100%) no-repeat center/cover fixed;
-        animation: bg-gradient 10s infinite linear;
-        background-size: 400%;
-        border-radius: 50%;
-    }
-    &__btn-cart {
-        background-image: url("../images/icons/cart.svg");
-        display: block;
-        width: 28px;
-        height: 28px;
-        border: none;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: transparent;
-        border-radius: 50%;
-        filter: drop-shadow(0 0 20px transparent);
-        transition: background-color .4s ease, drop-shadow .4s ease;
-        &:hover {
-            background-color: $btn;
-            filter: drop-shadow(0 0 20px $btn);
-        }
-    }
     &__social {
         &-list {
+            padding: 0 5px;
             display: flex;
             gap: 10px;
         }
@@ -82,6 +70,14 @@
             animation: bg-gradient 10s infinite linear;
             background-size: 400%;
             border-radius: 50%;
+            box-shadow: 2px 3px 10px $shadow;
+            background-color: transparent;
+            filter: drop-shadow(0 0 20px transparent);
+            transition: background .4s ease, drop-shadow .4s ease;
+            &:hover {
+                background: $btn;
+                filter: drop-shadow(0 0 20px $btn);
+            }
         }
         &-link {
             display: block;
@@ -90,14 +86,6 @@
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
-            background-color: transparent;
-            border-radius: 50%;
-            filter: drop-shadow(0 0 20px transparent);
-            transition: background-color .4s ease, drop-shadow .4s ease;
-            &:hover {
-                background-color: $btn;
-                filter: drop-shadow(0 0 20px $btn);
-            }
         }
         &-instagram {
             background-image: url("../images/icons/instagram.svg");
@@ -107,6 +95,143 @@
         }
         &-viber {
             background-image: url("../images/icons/viber.svg");
+        }
+    }
+    &__control {
+        &-list {
+            padding-left: 15px;
+        }
+        &-item {
+            background: linear-gradient(-149deg, rgb(144, 38, 119) 20%, rgb(196, 204, 78) 42%, rgb(93, 55, 146) 72%, rgb(52, 160, 90) 100%) no-repeat center/cover fixed;
+            animation: bg-gradient 10s infinite linear;
+            background-size: 400%;
+            border-radius: 50%;
+            box-shadow: 2px 3px 10px $shadow;
+            background-color: transparent;
+            filter: drop-shadow(0 0 20px transparent);
+            transition: background .4s ease, drop-shadow .4s ease;
+            &:hover {
+                background: $btn;
+                filter: drop-shadow(0 0 20px $btn);
+            }
+        }
+        &-cart {
+            background-image: url("../images/icons/cart.svg");
+            display: block;
+            width: 28px;
+            height: 28px;
+            border: none;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 50%;
+            background-color: transparent;
+        }
+    }
+}
+@media (max-width: 800px) {
+    .header {
+        &__logo {
+            width: 100px;
+        }
+        &__hamburger-menu {
+            display: block;
+            position: fixed;
+            right: 10px;
+            top: 26px;
+            transform: translateY(-50%);
+            width: 30px;
+            height: 15px;
+            z-index: 10;
+            &>span {
+                display: block;
+                height: 3px;
+                width: 100%;
+                background-color: #fff;
+                transition: 0.5s all;
+            }
+            &>span:not(:last-child) {
+                margin-bottom: 4px;
+                }
+            &-active {
+                padding-top: 4px;
+                &>span {
+                    &:not(:last-child) {
+                        margin-bottom: -3px;
+                    }
+                    margin-bottom: -65px;
+                    &:nth-child(1) {
+                        transform: translateY(3px) rotate(-45deg);
+                    }
+                    &:nth-child(2) {
+                        display: none;
+                    }
+                    &:nth-child(3) {
+                        transform: translateY(3px) rotate(45deg);
+                    }
+                }
+            }
+            filter: drop-shadow(0 0 20px transparent);
+            transition: drop-shadow .4s ease;
+            &:hover {
+                filter: drop-shadow(0 0 20px $btn);
+            }
+        }
+        &__mobile-wrapper {
+            z-index: 9;
+            overflow: auto;
+            position: fixed;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100vh;
+            padding: 15px 10px;
+            box-shadow: 0 2px 10px $shadow;
+            background-color: $burger-menu-bg;
+            transition: 0.5s all;
+            &-active {
+                left: 0;
+            }
+        }
+        &__contacts {
+            &-list {
+                width: 100%;
+                padding: 10px 0;
+            }
+            &-link {
+                font-size: 1.8rem;
+            }
+        }
+        &__social {
+            &-list {
+                width: 100%;
+                padding: 0;
+                justify-content: space-around;
+            }
+            &-item {
+                background: linear-gradient(149deg, rgb(144, 38, 119) 20%, rgb(196, 204, 78) 42%, rgb(93, 55, 146) 72%, rgb(52, 160, 90) 100%) no-repeat center/cover fixed;
+                animation: bg-gradient 10s infinite linear;
+                background-size: 400%;
+                border-radius: 50%;
+            }
+        }
+        &__control-list {
+            padding: 0 50px 0 0;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .header {
+        &__mobile-wrapper {
+            padding: 15px;
+        }
+        &__contacts {
+            &-link {
+                font-size: 1.4rem;
+            }
         }
     }
 }

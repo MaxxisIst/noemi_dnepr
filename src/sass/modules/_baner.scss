@@ -10,8 +10,6 @@
         padding: 75px 50px 75px 0;
     }
     &__title {
-        font-family: Playfair Display, serif;
-        font-weight: 400;
         font-size: 8rem;
     }
     &__adventages-list {
@@ -45,20 +43,7 @@
         box-shadow: 2px 3px 10px $shadow;
         min-width: 388px;
         min-height: 649px;
-        border-radius: 50%;
-        filter: drop-shadow(0 0 20px $btn);
-        animation: baner-lighting 5s infinite linear;
-    }
-}
-@keyframes baner-lighting {
-    0% {
-        filter: drop-shadow(0 0 0 $btn);
-    }
-    50% {
-        filter: drop-shadow(0 0 30px $btn);
-    }
-    100% {
-        filter: drop-shadow(0 0 0 $btn);
+        border-radius: 200px;
     }
 }
 @media (max-width: 1200px) {

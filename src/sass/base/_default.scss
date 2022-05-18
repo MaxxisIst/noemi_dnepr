@@ -100,11 +100,15 @@ section {
         filter: drop-shadow(0 0 20px $btn);
     }
 }
+h1, h2 {
+    font-family: Playfair Display, serif;
+    font-weight: 400;
+}
 @media (max-width: 1000px) {
     body {
         font-size: 1.6rem;
     }
     section {
-        padding-top: 25px;
+        padding-top: 40px;
     }
 }

@@ -182,13 +182,14 @@
             overflow: auto;
             position: fixed;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: start;
+            gap: 20px;
             align-items: center;
             top: 0;
             left: -100%;
             width: 50%;
             height: 100vh;
-            padding: 15px 10px;
+            padding: 15px 0;
             box-shadow: 0 2px 10px $shadow;
             background-color: $burger-menu-bg;
             transition: 0.5s all;
@@ -198,8 +199,7 @@
         }
         &__contacts {
             &-list {
-                width: 100%;
-                padding: 10px 0;
+                padding: 0;
             }
             &-link {
                 font-size: 1.8rem;
@@ -207,9 +207,7 @@
         }
         &__social {
             &-list {
-                width: 100%;
                 padding: 0;
-                justify-content: space-around;
             }
             &-item {
                 background: linear-gradient(149deg, rgb(144, 38, 119) 20%, rgb(196, 204, 78) 42%, rgb(93, 55, 146) 72%, rgb(52, 160, 90) 100%) no-repeat center/cover fixed;
@@ -225,9 +223,6 @@
 }
 @media (max-width: 600px) {
     .header {
-        &__mobile-wrapper {
-            padding: 15px;
-        }
         &__contacts {
             &-link {
                 font-size: 1.4rem;

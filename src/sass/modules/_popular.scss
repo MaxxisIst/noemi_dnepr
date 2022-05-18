@@ -1,0 +1,146 @@
+.popular {
+    &__container {
+        text-align: center;
+        max-width: 100%;
+    }
+    &__title {
+        margin-bottom: 20px;
+        font-size: 6rem;
+    }
+    &__list {
+        padding: 5px;
+        display: grid;
+        gap: 10px;
+        justify-content: space-between;
+        grid-template-columns: repeat(4, 300px);
+        box-shadow: 2px 3px 10px $shadow;
+        background: rgba(255, 255, 255, 0.192);
+        backdrop-filter: blur(10px);
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 25px;
+        border: 1px solid $shadow;
+        // min-width: 250px;
+        height: 350px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: all .4s;
+        &:nth-child(1) {
+            background-image: url("../images/icons/haircuts_and_styling.png");
+        }
+        &:nth-child(2) {
+            background-image: url("../images/icons/hair_coloring.png");
+        }
+        &:nth-child(3) {
+            background-image: url("../images/icons/hair_care_and_treatment.png");
+        }
+        &:nth-child(4) {
+            background-image: url("../images/icons/cosmetology.png");
+        }
+        &:nth-child(5) {
+            background-image: url("../images/icons/epil_depil_wax_shugar.png");
+        }
+        &:nth-child(6) {
+            background-image: url("../images/icons/manicure.png");
+        }
+        &:nth-child(7) {
+            background-image: url("../images/icons/pedicure.png");
+        }
+        &:nth-child(8) {
+            background-image: url("../images/icons/makeup.png");
+        }
+        &-title {
+            text-shadow: 2px 3px 10px $shadow;
+            font-size: 2rem;
+        }
+        &-btn {
+            padding: 20px 10px;
+            width: 100%;
+            border-radius: 0;
+        }
+        &:hover {
+            background-color: $header-bg;
+            .popular__item-btn {
+                display: block;
+            }
+        }
+    }
+    &__btn {
+        display: block;
+        border-radius: 0;
+        padding: 30px 10px;
+    }
+}
+@media (max-width: 1340px) {
+    .popular {
+        &__item {
+            height: 295px;
+        }
+        &__list {
+            grid-template-columns: repeat(4, 250px);
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .popularr {
+        &__title {
+            font-size: 4.5rem;
+        }
+    }
+}
+@media (max-width: 1100px) {
+    .popular {
+        &__item {
+            height: 260px;
+            &-btn {
+                padding: 15px 10px;
+            }
+        }
+        &__list {
+            grid-template-columns: repeat(4, 220px);
+        }
+        &__btn {
+            padding: 20px 10px;
+        }
+    }
+}
+@media (max-width: 1000px) {
+    .popular {
+        &__title {
+            font-size: 3rem;
+        }
+        &__item {
+            height: 210px;
+        }
+        &__list {
+            grid-template-columns: repeat(4, 180px);
+        }
+    }
+}
+@media (max-width: 800px) {
+    .popular {
+        &__list {
+            grid-template-columns: repeat(2, 180px);
+            justify-content: space-evenly;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .popular {
+        &__title {
+            font-size: 2.5rem;
+        }
+        &__item {
+            height: 210px;
+        }
+        &__list {
+            grid-template-columns: repeat(1, 180px);
+            justify-content: space-evenly;
+        }
+    }
+}

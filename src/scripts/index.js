@@ -1,17 +1,17 @@
-window.addEventListener('DOMContentLoaded', () => {
-    const menu = document.querySelector('.header__mobile-wrapper'),
-    menuItem = document.querySelectorAll('.navigation__item'),
-    hamburger = document.querySelector('.header__hamburger-menu');
+import burgerMenu from "./modules/burgerMenu.js";
+import slider from "./modules/slider.js";
 
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('header__hamburger-menu-active');
-        menu.classList.toggle('header__mobile-wrapper-active');
-    });
+burgerMenu({
+    selectorBtn: '.header__hamburger-menu',
+    selectorMenu: '.header__mobile-wrapper',
+    classActiveBurger: 'header__hamburger-menu-active',
+    classActiveMenu: 'header__mobile-wrapper-active',
+    selectorClose: '.navigation__item, .header__hamburger-menu, .header__social-item, .header__contacts-item',
+});
 
-    menuItem.forEach(item => {
-        item.addEventListener('click', () => {
-            hamburger.classList.toggle('header__hamburger-menu-active');
-            menu.classList.toggle('header__mobile-wrapper-active');
-        });
-    });
+slider({
+    selectorSlider: '.discount__slider, .partners__slider',
+    selectorNext: '.discount__next, .partners__next',
+    selectorPrev: '.discount__prev, .partners__prev',
+    selectorPagination: '.discount__pagination, .partners__pagination',
 });

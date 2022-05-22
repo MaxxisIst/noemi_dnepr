@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles/index.min.css">
+    <script src="scripts//index.js" type="module"></script>
 </head>
 <body>
     <header class="header">
@@ -167,196 +169,226 @@
         </section>
         <section class="discount">
             <div class="container discount__container">
-                <h2>Акции, скидки и события!</h2>
+                <h2 class="discount__title">Акции, скидки и события!</h2>
                 <div class="discount__slider swiper">
-                    <ul class="discount__slider-wrapper swiper-wrapper">
+                    <ul class="discount__slider-list swiper-wrapper">
                         <li class="discount__slider-item swiper-slide">
-                            <a class="discount__slider-link discount__slider-link" href="#" title="#" rel="noopener noreferer"
-                            style="background-image: image-set(url('.avif') 1x, url('.avif') 2x, url('.webp') 1x, url('.webp') 2x, url('.jpg') 1x, url('.jpg') 2x)">
+                            <a class="discount__slider-link" href="#" title="#" rel="noopener noreferer">
                                 <fieldset disabled>
                                     <legend>Акция</legend>
-                                    <h3 class="discount__slider-title">20%</h3>
-                                    <h4>Скидка на маникюр</h4>
+                                    <h3 class="discount__slider-title">50%</h3>
+                                    <h4 class="discount__slider-descr">На первую депиляцию, шугаринг...</h4>
                                 </fieldset>
                             </a>
-                            <a class="discount__slider-link discount__slider-link" href="#" title="#" rel="noopener noreferer"
-                            style="background-image: image-set(url('.avif') 1x, url('.avif') 2x, url('.webp') 1x, url('.webp') 2x, url('.jpg') 1x, url('.jpg') 2x)">
+                            <a class="discount__slider-link" href="#" title="#" rel="noopener noreferer">
                                 <fieldset disabled>
                                     <legend>Акция</legend>
                                     <h3 class="discount__slider-title">15%</h3>
-                                    <h4>Скидка на День рождения</h4>
-                                </fieldset>
-                            </a>
-                            <a class="discount__slider-link discount__slider-link" href="#" title="#" rel="noopener noreferer"
-                            style="background-image: image-set(url('.avif') 1x, url('.avif') 2x, url('.webp') 1x, url('.webp') 2x, url('.jpg') 1x, url('.jpg') 2x)">
-                                <fieldset disabled>
-                                    <legend>Событие</legend>
-                                    <h3 class="discount__slider-title">Вау!</h3>
-                                    <h4>Хэллоуин в нашем салоне</h4>
+                                    <h4 class="discount__slider-descr">Скидка на День рождения</h4>
                                 </fieldset>
                             </a>
                         </li>
                         <li class="discount__slider-item swiper-slide">
-                            <a class="discount__slider-link discount__slider-link" href="#" title="#" rel="noopener noreferer"
-                            style="background-image: image-set(url('.avif') 1x, url('.avif') 2x, url('.webp') 1x, url('.webp') 2x, url('.jpg') 1x, url('.jpg') 2x)">
-                                <fieldset disabled>
-                                    <legend>Акция</legend>
-                                    <h3 class="discount__slider-title">20%</h3>
-                                    <h4>Скидка на стрижку</h4>
-                                </fieldset>
-                            </a>
-                            <a class="discount__slider-link discount__slider-link" href="#" title="#" rel="noopener noreferer"
-                            style="background-image: image-set(url('.avif') 1x, url('.avif') 2x, url('.webp') 1x, url('.webp') 2x, url('.jpg') 1x, url('.jpg') 2x)">
-                                <fieldset disabled>
-                                    <legend>Акция</legend>
-                                    <h3 class="discount__slider-title">15%</h3>
-                                    <h4>Скидка на косметолога</h4>
-                                </fieldset>
-                            </a>
-                            <a class="discount__slider-link discount__slider-link" href="#" title="#" rel="noopener noreferer"
-                            style="background-image: image-set(url('.avif') 1x, url('.avif') 2x, url('.webp') 1x, url('.webp') 2x, url('.jpg') 1x, url('.jpg') 2x)">
+                            <a class="discount__slider-link" href="#" title="#" rel="noopener noreferer">
                                 <fieldset disabled>
                                     <legend>Событие</legend>
                                     <h3 class="discount__slider-title">Вау!</h3>
-                                    <h4>Карнавальная ночь</h4>
+                                    <h4 class="discount__slider-descr">Хэллоуин в нашем салоне</h4>
+                                </fieldset>
+                            </a>
+                            <a class="discount__slider-link" href="#" title="#" rel="noopener noreferer">
+                                <fieldset disabled>
+                                    <legend>Акция</legend>
+                                    <h3 class="discount__slider-title">20%</h3>
+                                    <h4 class="discount__slider-descr">Скидка на стрижку</h4>
                                 </fieldset>
                             </a>
                         </li>
                         <li class="discount__slider-item swiper-slide">
-                            <a class="discount__slider-link discount__slider-link" href="#" title="#" rel="noopener noreferer"
-                            style="background-image: image-set(url('.avif') 1x, url('.avif') 2x, url('.webp') 1x, url('.webp') 2x, url('.jpg') 1x, url('.jpg') 2x)">
-                                <fieldset disabled>
-                                    <legend>Акция</legend>
-                                    <h3 class="discount__slider-title">20%</h3>
-                                    <h4>Скидка на шугаринг</h4>
-                                </fieldset>
-                            </a>
-                            <a class="discount__slider-link discount__slider-link" href="#" title="#" rel="noopener noreferer"
-                            style="background-image: image-set(url('.avif') 1x, url('.avif') 2x, url('.webp') 1x, url('.webp') 2x, url('.jpg') 1x, url('.jpg') 2x)">
+                            <a class="discount__slider-link" href="#" title="#" rel="noopener noreferer">
                                 <fieldset disabled>
                                     <legend>Акция</legend>
                                     <h3 class="discount__slider-title">15%</h3>
-                                    <h4>Скидка на мейкап</h4>
+                                    <h4 class="discount__slider-descr">Скидка на косметолога</h4>
                                 </fieldset>
                             </a>
-                            <a class="discount__slider-link discount__slider-link" href="#" title="#" rel="noopener noreferer"
-                            style="background-image: image-set(url('.avif') 1x, url('.avif') 2x, url('.webp') 1x, url('.webp') 2x, url('.jpg') 1x, url('.jpg') 2x)">
+                            <a class="discount__slider-link" href="#" title="#" rel="noopener noreferer">
                                 <fieldset disabled>
                                     <legend>Событие</legend>
                                     <h3 class="discount__slider-title">Вау!</h3>
-                                    <h4>Маскарадная ночь</h4>
+                                    <h4 class="discount__slider-descr">Карнавальная ночь</h4>
+                                </fieldset>
+                            </a>
+                        </li>
+                        <li class="discount__slider-item swiper-slide">
+                            <a class="discount__slider-link" href="#" title="#" rel="noopener noreferer">
+                                <fieldset disabled>
+                                    <legend>Акция</legend>
+                                    <h3 class="discount__slider-title">20%</h3>
+                                    <h4 class="discount__slider-descr">Скидка на шугаринг</h4>
+                                </fieldset>
+                            </a>
+                            <a class="discount__slider-link" href="#" title="#" rel="noopener noreferer">
+                                <fieldset disabled>
+                                    <legend>Акция</legend>
+                                    <h3 class="discount__slider-title">15%</h3>
+                                    <h4 class="discount__slider-descr">Скидка на мейкап</h4>
+                                </fieldset>
+                            </a>
+                        </li>
+                        <li class="discount__slider-item swiper-slide">
+                            <a class="discount__slider-link" href="#" title="#" rel="noopener noreferer">
+                                <fieldset disabled>
+                                    <legend>Событие</legend>
+                                    <h3 class="discount__slider-title">Вау!</h3>
+                                    <h4 class="discount__slider-descr">Маскарадная ночь</h4>
+                                </fieldset>
+                            </a>
+                            <a class="discount__slider-link" href="#" title="#" rel="noopener noreferer">
+                                <fieldset disabled>
+                                    <legend>Акция</legend>
+                                    <h3 class="discount__slider-title">20%</h3>
+                                    <h4 class="discount__slider-descr">Скидка на маникюр</h4>
                                 </fieldset>
                             </a>
                         </li>
                     </ul>
-                    <div class="discount__slider-pagination"></div>
+                    <div class="discount__next swiper-button-next"></div>
+                    <div class="discount__prev swiper-button-prev"></div>
+                    <div class="discount__pagination swiper-pagination"></div>
                 </div>
             </div>
         </section>
         <section class="work">
             <div class="container work__container">
-                <div class="work__gallery">
-                    <picture class="work__gallery-item">
-                        <source type="image/avif" srcset="images/.avif 1x, images/.avif 2x">
-                        <source type="image/webp" srcset="images/.webp 1x, images/.webp 2x">
-                        <img src="images/.jpg" srcset="images/.jpg 2x" alt="#" title="#" class="work__gallery-image">
-                    </picture>
-                    <picture class="work__item">
-                        <source type="image/avif" srcset="images/.avif 1x, images/.avif 2x">
-                        <source type="image/webp" srcset="images/.webp 1x, images/.webp 2x">
-                        <img src="images/.jpg" srcset="images/.jpg 2x" alt="#" title="#" class="work__gallery-image">
-                    </picture>
-                    <picture class="work__item">
-                        <source type="image/avif" srcset="images/.avif 1x, images/.avif 2x">
-                        <source type="image/webp" srcset="images/.webp 1x, images/.webp 2x">
-                        <img src="images/.jpg" srcset="images/.jpg 2x" alt="#" title="#" class="work__gallery-image">
-                    </picture>
-                    <picture class="work__item">
-                        <source type="image/avif" srcset="images/.avif 1x, images/.avif 2x">
-                        <source type="image/webp" srcset="images/.webp 1x, images/.webp 2x">
-                        <img src="images/.jpg" srcset="images/.jpg 2x" alt="#" title="#" class="work__gallery-image">
-                    </picture>
-                    <picture class="work__item">
-                        <source type="image/avif" srcset="images/.avif 1x, images/.avif 2x">
-                        <source type="image/webp" srcset="images/.webp 1x, images/.webp 2x">
-                        <img src="images/.jpg" srcset="images/.jpg 2x" alt="#" title="#" class="work__gallery-image">
-                    </picture>
-                    <picture class="work__item">
-                        <source type="image/avif" srcset="images/.avif 1x, images/.avif 2x">
-                        <source type="image/webp" srcset="images/.webp 1x, images/.webp 2x">
-                        <img src="images/.jpg" srcset="images/.jpg 2x" alt="#" title="#" class="work__gallery-image">
-                    </picture>
-                    <picture class="work__item">
-                        <source type="image/avif" srcset="images/.avif 1x, images/.avif 2x">
-                        <source type="image/webp" srcset="images/.webp 1x, images/.webp 2x">
-                        <img src="images/.jpg" srcset="images/.jpg 2x" alt="#" title="#" class="work__gallery-image">
-                    </picture>
-                    <picture class="work__item">
-                        <source type="image/avif" srcset="images/.avif 1x, images/.avif 2x">
-                        <source type="image/webp" srcset="images/.webp 1x, images/.webp 2x">
-                        <img src="images/.jpg" srcset="images/.jpg 2x" alt="#" title="#" class="work__gallery-image">
-                    </picture>
-                    <picture class="work__item">
-                        <source type="image/avif" srcset="images/.avif 1x, images/.avif 2x">
-                        <source type="image/webp" srcset="images/.webp 1x, images/.webp 2x">
-                        <img src="images/.jpg" srcset="images/.jpg 2x" alt="#" title="#" class="work__gallery-image">
-                    </picture>
-                </div>
+                <h2 class="work__title">Наши работы</h2>
+                <ul class="work__gallery-list">
+                    <li class="work__gallery-item">
+                        <picture>
+                            <source type="image/avif" srcset="images/gallery/001_1x.avif 1x, images/gallery/001_2x.avif 2x">
+                            <source type="image/webp" srcset="images/gallery/001_1x.webp 1x, images/gallery/001_2x.webp 2x">
+                            <img class="work__gallery-image" src="images/gallery/001_1x.jpg" srcset="images/gallery/001_2x.jpg 2x" alt="#" title="#">
+                        </picture>
+                    </li>
+                    <li class="work__gallery-item">
+                        <picture>
+                            <source type="image/avif" srcset="images/gallery/002_1x.avif 1x, images/gallery/002_2x.avif 2x">
+                            <source type="image/webp" srcset="images/gallery/002_1x.webp 1x, images/gallery/002_2x.webp 2x">
+                            <img class="work__gallery-image" src="images/gallery/002_1x.jpg" srcset="images/gallery/002_2x.jpg 2x" alt="#" title="#">
+                        </picture>
+                    </li>
+                    <li class="work__gallery-item">
+                        <picture>
+                            <source type="image/avif" srcset="images/gallery/003_1x.avif 1x, images/gallery/003_2x.avif 2x">
+                            <source type="image/webp" srcset="images/gallery/003_1x.webp 1x, images/gallery/003_2x.webp 2x">
+                            <img class="work__gallery-image" src="images/gallery/003_1x.jpg" srcset="images/gallery/003_2x.jpg 2x" alt="#" title="#">
+                        </picture>
+                    </li>
+                    <li class="work__gallery-item">
+                        <picture>
+                            <source type="image/avif" srcset="images/gallery/004_1x.avif 1x, images/gallery/004_2x.avif 2x">
+                            <source type="image/webp" srcset="images/gallery/004_1x.webp 1x, images/gallery/004_2x.webp 2x">
+                            <img class="work__gallery-image" src="images/gallery/004_1x.jpg" srcset="images/gallery/004_2x.jpg 2x" alt="#" title="#">
+                        </picture>
+                    </li>
+                    <li class="work__gallery-item">
+                        <picture>
+                            <source type="image/avif" srcset="images/gallery/005_1x.avif 1x, images/gallery/005_2x.avif 2x">
+                            <source type="image/webp" srcset="images/gallery/005_1x.webp 1x, images/gallery/005_2x.webp 2x">
+                            <img class="work__gallery-image" src="images/gallery/005_1x.jpg" srcset="images/gallery/005_2x.jpg 2x" alt="#" title="#">
+                        </picture>
+                    </li>
+                    <li class="work__gallery-item">
+                        <picture>
+                            <source type="image/avif" srcset="images/gallery/006_1x.avif 1x, images/gallery/006_2x.avif 2x">
+                            <source type="image/webp" srcset="images/gallery/006_1x.webp 1x, images/gallery/006_2x.webp 2x">
+                            <img class="work__gallery-image" src="images/gallery/006_1x.jpg" srcset="images/gallery/006_2x.jpg 2x" alt="#" title="#">
+                        </picture>
+                    </li>
+                    <li class="work__gallery-item">
+                        <picture>
+                            <source type="image/avif" srcset="images/gallery/007_1x.avif 1x, images/gallery/007_2x.avif 2x">
+                            <source type="image/webp" srcset="images/gallery/007_1x.webp 1x, images/gallery/007_2x.webp 2x">
+                            <img class="work__gallery-image" src="images/gallery/007_1x.jpg" srcset="images/gallery/007_2x.jpg 2x" alt="#" title="#">
+                        </picture>
+                    </li>
+                    <li class="work__gallery-item">
+                        <picture>
+                            <source type="image/avif" srcset="images/gallery/008_1x.avif 1x, images/gallery/008_2x.avif 2x">
+                            <source type="image/webp" srcset="images/gallery/008_1x.webp 1x, images/gallery/008_2x.webp 2x">
+                            <img class="work__gallery-image" src="images/gallery/008_1x.jpg" srcset="images/gallery/00182x.jpg 2x" alt="#" title="#">
+                        </picture>
+                    </li>
+                    <li class="work__gallery-item">
+                        <picture>
+                            <source type="image/avif" srcset="images/gallery/009_1x.avif 1x, images/gallery/009_2x.avif 2x">
+                            <source type="image/webp" srcset="images/gallery/009_1x.webp 1x, images/gallery/009_2x.webp 2x">
+                            <img class="work__gallery-image" src="images/gallery/009_1x.jpg" srcset="images/gallery/009_2x.jpg 2x" alt="#" title="#">
+                        </picture>
+                    </li>
+                </ul>
             </div>
         </section>
-        <section class="sponsors">
-            <div class="container sponsors__container">
-                <h2>Наши спонсоры и партнеры</h2>
-                <div class="sponsors__slider swiper">
-                    <ul class="sponsors__slider-wrapper swiper-wrapper">
-                        <li class="sponsors__slider-item swiper-slide">
-                            <a class="sponsors__slider-link" href="#" title="#" rel="noopener noreferer" target="_blank">
-                                <img class="sponsors__slider-image" src="images/" alt="#">
+        <section class="partners">
+            <div class="container partners__container">
+                <h2 class="partners__title">Наши спонсоры и партнеры</h2>
+                <div class="partners__slider swiper">
+                    <ul class="partners__slider-list swiper-wrapper">
+                        <li class="partners__slider-item swiper-slide">
+                            <a class="partners__slider-link" href="#" title="#" rel="noopener noreferer" target="_blank">
+                                <img src="images/partners/esti_partner.png" alt="#">
                             </a>
-                            <a class="sponsors__slider-link" href="#" title="#" rel="noopener noreferer" target="_blank">
-                                <img class="sponsors__slider-image" src="images/" alt="#">
-                            </a>
-                            <a class="sponsors__slider-link" href="#" title="#" rel="noopener noreferer" target="_blank">
-                                <img class="sponsors__slider-image" src="images/" alt="#">
+                            <a class="partners__slider-link" href="#" title="#" rel="noopener noreferer" target="_blank">
+                                <img src="images/partners/green_leaves_partner.png" alt="#">
                             </a>
                         </li>
-                        <li class="sponsors__slider-item swiper-slide">
-                            <a class="sponsors__slider-link" href="#" title="#" rel="noopener noreferer" target="_blank">
-                                <img class="sponsors__slider-image" src="images/" alt="#">
+                        <li class="partners__slider-item swiper-slide">
+                            <a class="partners__slider-link" href="#" title="#" rel="noopener noreferer" target="_blank">
+                                <img src="images/partners/spa_partner.png" alt="#">
                             </a>
-                            <a class="sponsors__slider-link" href="#" title="#" rel="noopener noreferer" target="_blank">
-                                <img class="sponsors__slider-image" src="images/" alt="#">
-                            </a>
-                            <a class="sponsors__slider-link" href="#" title="#" rel="noopener noreferer" target="_blank">
-                                <img class="sponsors__slider-image" src="images/" alt="#">
+                            <a class="partners__slider-link" href="#" title="#" rel="noopener noreferer" target="_blank">
+                                <img src="images/partners/esti_partner.png" alt="#">
                             </a>
                         </li>
-                        <li class="sponsors__slider-item swiper-slide">
-                            <a class="sponsors__slider-link" href="#" title="#" rel="noopener noreferer" target="_blank">
-                                <img class="sponsors__slider-image" src="images/" alt="#">
+                        <li class="partners__slider-item swiper-slide">
+                            <a class="partners__slider-link" href="#" title="#" rel="noopener noreferer" target="_blank">
+                                <img src="images/partners/beauty_care_partner.png" alt="#">
                             </a>
-                            <a class="sponsors__slider-link" href="#" title="#" rel="noopener noreferer" target="_blank">
-                                <img class="sponsors__slider-image" src="images/" alt="#">
+                            <a class="partners__slider-link" href="#" title="#" rel="noopener noreferer" target="_blank">
+                                <img src="images/partners/esti_partner.png" alt="#">
                             </a>
-                            <a class="sponsors__slider-link" href="#" title="#" rel="noopener noreferer" target="_blank">
-                                <img class="sponsors__slider-image" src="images/" alt="#">
+                        </li>
+                        <li class="partners__slider-item swiper-slide">
+                            <a class="partners__slider-link" href="#" title="#" rel="noopener noreferer" target="_blank">
+                                <img src="images/partners/esti_partner.png" alt="#">
+                            </a>
+                            <a class="partners__slider-link" href="#" title="#" rel="noopener noreferer" target="_blank">
+                                <img src="images/partners/esti_partner.png" alt="#">
+                            </a>
+                        </li>
+                        <li class="partners__slider-item swiper-slide">
+                            <a class="partners__slider-link" href="#" title="#" rel="noopener noreferer" target="_blank">
+                                <img src="images/partners/spa_partner.png" alt="#">
+                            </a>
+                            <a class="partners__slider-link" href="#" title="#" rel="noopener noreferer" target="_blank">
+                                <img src="images/partners/green_leaves_partner.png" alt="#">
                             </a>
                         </li>
                     </ul>
-                    <div class="sponsors__slider-pagination"></div>
+                    <div class="partners__next swiper-button-next"></div>
+                    <div class="partners__prev swiper-button-prev"></div>
+                    <div class="partners__pagination swiper-pagination"></div>
                 </div>
             </div>
         </section>
         <section class="bottom-baner">
             <div class="container bottom-baner__container">
-                <picture>
-                    <source type="image/avif" srcset="images/.avif 1x, images/.avif 2x">
-                    <source type="image/webp" srcset="images/.webp 1x, images/.webp 2x">
-                    <img src="images/.jpg" srcset="images/.jpg 2x" alt="Портретное фото девушки" class="bottom-baner-image">
-                </picture>
-                <h1>Записаться в г. Днепр</h1>
-                <h3>В нашем салоне вы сможете сделать преображение с головы до пяток ;)</h3>
-                <button class="btn bottom-baner__btn" type="button">Записаться сейчас</button>
+                <div class="bottom-baner__wrapper">
+                    <h1 class="bottom-baner__title">Записаться в г. Днепр</h1>
+                    <h3 class="bottom-baner__subtitle">В нашем салоне вы сможете сделать преображение с головы до пяток ;)</h3>
+                    <button class="btn bottom-baner__btn" type="button">Записаться сейчас</button>
+                </div>
+                <div class="bottom-baner__photo-wrapper"></div>
             </div>
         </section>
         <section class="reviews">
@@ -367,29 +399,43 @@
     </main>
     <footer class="footer">
         <div class="container footer__container">
-            <a href="index.html" class="logo" title="#">
+            <a href="index.html" class="footer__logo" title="#">
                 <img src="images/logos/logo.png" alt="Логотип салона красоты Noemi Днепр">
             </a>
-            <ul class="footer__contacts-list">
-                <li class="footer__contacts-item">
-                    <a class="footer__contacts-link" href="https://goo.gl/maps/guUG7Fvsfn8N4KLy8" rel="noopener noreferer" title="#">г. Днепр пр-кт Пушкина 55</a>
-                </li>
-                <li class="footer__contacts-item">
-                    <a class="footer__contacts-link" href="mailto:info@beautylight.ua" rel="noopener noreferer" title="#">info@beautylight.ua</a>
-                </li>
-                <li class="footer__contacts-item">
-                    <a class="footer__contacts-link" href="tel:+380990000000" rel="noopener noreferer" title="#">+3 (8099) 000-00-00</a>
+            <ul class="footer__adress-list">
+                <li class="footer__adress-item">
+                    <a class="footer__adress-link" href="https://goo.gl/maps/Q3BeZFuTabGe1x9u7" target="_blank" rel="noopener noreferer" title="#">г. Днепр пр-кт Пушкина 55</a>
                 </li>
             </ul>
-            <ul class="footer__control-list">
-                <li class="footer__control-item">
-                    <a class="footer__social-link" href="#" rel="noopener noreferer" title="#" target="_blank"></a>
+            <ul class="footer__agreement-list">
+                <li class="footer__agreement-item">
+                    <a class="footer__agreement-link" href="#" rel="noopener noreferer" title="#">Политика конфиденциальности</a>
                 </li>
-                <li class="footer__control-item">
-                    <a class="footer__social-link" href="#" rel="noopener noreferer" title="#" target="_blank"></a>
+            </ul>
+            <ul class="footer__contacts-list">
+                <li class="footer__contacts-item">
+                    <a class="footer__contacts-link" href="mailto:info@beautylight.ua" rel="noopener noreferer" title="#">
+                        info@beautylight.ua
+                    </a>
                 </li>
-                <li class="footer__control-item">
-                    <a class="footer__social-link" href="#" rel="noopener noreferer" title="#" target="_blank"></a>
+                <li class="footer__contacts-item">
+                    <a class="footerr__contacts-link" href="tel:+380990000000" rel="noopener noreferer" title="#">
+                        +3 (8099) 000-00-00
+                    </a>
+                </li>
+            </ul>
+            <ul class="footer__social-list">
+                <li class="footer__social-item">
+                    <a class="footer__social-link footer__social-instagram" href="#" rel="noopener noreferer" title="#" target="_blank">
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a class="footer__social-link footer__social-telegram" href="#" rel="noopener noreferer" title="#" target="_blank">
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a class="footer__social-link footer__social-viber" href="#" rel="noopener noreferer" title="#" target="_blank">
+                    </a>
                 </li>
             </ul>
         </div>
@@ -428,6 +474,6 @@
         comments powered by Disqus.
     </a>
 </noscript>
-<script src="scripts/index.js"></script>
+<!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
 </body>
 </html>

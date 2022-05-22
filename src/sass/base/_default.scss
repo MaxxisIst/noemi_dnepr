@@ -13,7 +13,8 @@ body {
     min-width: 300px;
     min-height: 100vh;
     max-width: 100%;
-    background: linear-gradient(149deg, rgb(52, 160, 90) 20%, rgb(93, 55, 146) 42%, rgb(196, 204, 78) 72%, rgb(144, 38, 119) 100%) no-repeat center/cover fixed;
+    // background: linear-gradient(149deg, rgb(52, 160, 90) 20%, rgb(93, 55, 146) 42%, rgb(196, 204, 78) 72%, rgb(144, 38, 119) 100%) no-repeat center/cover fixed;
+    background: linear-gradient(149deg, rgb(116, 177, 137) 20%, rgb(80, 129, 174) 42%, rgb(206, 133, 96) 72%, rgb(206, 206, 206) 100%) no-repeat center/cover fixed;
     animation: bg-gradient 10s infinite linear;
     background-size: 400%;
     margin: 0;
@@ -52,6 +53,7 @@ a {
 h1,
 h2,
 h3,
+h4,
 ul,
 p,
 figure,
@@ -88,7 +90,8 @@ section {
     border: none;
     border-radius: 25px;
     color: $text-2;
-    background: linear-gradient(149deg, rgb(144, 38, 119) 20%, rgb(196, 204, 78) 42%, rgb(93, 55, 146) 72%, rgb(52, 160, 90) 100%) no-repeat center/cover fixed;    animation: bg-gradient 10s infinite linear;
+    // background: linear-gradient(-149deg, rgb(144, 38, 119) 20%, rgb(196, 204, 78) 42%, rgb(93, 55, 146) 72%, rgb(52, 160, 90) 100%) no-repeat center/cover fixed;    animation: bg-gradient 10s infinite linear;
+    background: linear-gradient(-149deg, rgb(116, 177, 137) 20%, rgb(80, 129, 174) 42%, rgb(206, 133, 96) 72%, rgb(206, 206, 206) 100%) no-repeat center/cover fixed;
     background-size: 400%;
     box-shadow: 2px 3px 10px $shadow;
     background-color: transparent;
@@ -100,7 +103,7 @@ section {
         filter: drop-shadow(0 0 20px $btn);
     }
 }
-h1, h2 {
+h1, h2, h3, h4 {
     font-family: Playfair Display, serif;
     font-weight: 400;
 }

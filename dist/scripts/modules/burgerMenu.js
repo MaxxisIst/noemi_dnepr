@@ -1,0 +1,1 @@
+const burgerMenu=({selectorBtn:e,selectorMenu:t,classActiveBurger:s,classActiveMenu:c,selectorClose:r})=>{const l=document.querySelector(e),o=document.querySelector(t);l.addEventListener("click",(()=>{o.classList.toggle(c),l.classList.toggle(s)})),o.addEventListener("click",(e=>{e.target.closest(r)&&(o.classList.remove(c),l.classList.remove(s))}))};export default burgerMenu;

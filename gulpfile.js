@@ -1,6 +1,7 @@
 import gulp from 'gulp';
 import browserSync from 'browser-sync';
 import del from 'del';
+import terser from 'gulp-terser';
 // import gulpImg from 'gulp-image';
 
 const html = () => gulp
@@ -11,13 +12,15 @@ const html = () => gulp
 const css = () => gulp
     .src([
         'src/styles/index.min.css',
-        'src/styles/normalize.css'
+        'src/styles/normalize.css',
+        'src/styles/swiper-bundle.min.css'
     ])
     .pipe(gulp.dest('dist/styles'))
     .pipe(browserSync.stream());
 
 const js = () => gulp
     .src('src/scripts/**/*.js')
+    .pipe(terser())
     .pipe(gulp.dest('dist/scripts'))
     .pipe(browserSync.stream());
 

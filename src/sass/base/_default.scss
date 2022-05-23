@@ -15,6 +15,7 @@ body {
     max-width: 100%;
     // background: linear-gradient(149deg, rgb(52, 160, 90) 20%, rgb(93, 55, 146) 42%, rgb(196, 204, 78) 72%, rgb(144, 38, 119) 100%) no-repeat center/cover fixed;
     background: linear-gradient(149deg, rgb(116, 177, 137) 20%, rgb(80, 129, 174) 42%, rgb(206, 133, 96) 72%, rgb(206, 206, 206) 100%) no-repeat center/cover fixed;
+    will-change: background-position;
     animation: bg-gradient 10s infinite linear;
     background-size: 400%;
     margin: 0;

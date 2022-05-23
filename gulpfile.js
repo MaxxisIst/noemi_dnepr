@@ -1,6 +1,7 @@
 import gulp from 'gulp';
 import browserSync from 'browser-sync';
 import del from 'del';
+import cssImport from 'gulp-cssimport';
 import webpack from 'webpack';
 import webpackStream from 'webpack-stream';
 // import terser from 'gulp-terser';
@@ -12,11 +13,8 @@ const html = () => gulp
     .pipe(browserSync.stream());
 
 const css = () => gulp
-    .src([
-        'src/styles/index.min.css',
-        'src/styles/normalize.css',
-        'src/styles/swiper-bundle.min.css'
-    ])
+    .src('src/styles/index.css')
+    .pipe(cssImport())
     .pipe(gulp.dest('dist/styles'))
     .pipe(browserSync.stream());
 

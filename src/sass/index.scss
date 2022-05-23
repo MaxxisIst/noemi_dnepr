@@ -10,3 +10,53 @@
 @import "modules/sponsors";
 @import "modules/bottom-baner";
 @import "modules/footer";
+@font-face {
+    font-family: "Jost";
+    src: local("Jost"),
+    url("../fonts/Jost-Regular.woff2") format("woff2"),
+    url("../fonts/Jost-Regular.woff") format("woff"),
+    url("../fonts/Jost-Regular.ttf") format("ttf");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Jost";
+    src: local("Jost"),
+    url("../fonts/Jost-Medium.woff2") format("woff2"),
+    url("../fonts/Jost-Medium.woff") format("woff"),
+    url("../fonts/Jost-Medium.ttf") format("ttf");
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Jost";
+    src: local("Jost"),
+    url("../fonts/Jost-SemiBold.woff2") format("woff2"),
+    url("../fonts/Jost-SemiBold.woff") format("woff"),
+    url("../fonts/Jost-SemiBold.ttf") format("ttf");
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Jost";
+    src: local("Jost"),
+    url("../fonts/Jost-Bold.woff2") format("woff2"),
+    url("../fonts/Jost-Bold.woff") format("woff"),
+    url("../fonts/Jost-Bold.ttf") format("ttf");
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Playfair Display";
+    src: local("Playfair Display"),
+    url("../fonts/PlayfairDisplay-Regular.woff2") format("woff2"),
+    url("../fonts/PlayfairDisplay-Regular.woff") format("woff"),
+    url("../fonts/PlayfairDisplay-Regular.ttf") format("ttf");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}

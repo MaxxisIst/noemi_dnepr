@@ -42,18 +42,11 @@
         }
     }
 }
-@media (max-width: 1000px) {
-    .navigation {
-        &__list {
-            gap: 10px;
-        }
-    }
-}
 @media (max-width: 800px) {
     .navigation {
         &__list {
             padding: 0;
-            gap: 15px;
+            gap: 20px;
             align-items: center;
         }
         &__item {

@@ -1,7 +1,9 @@
 import gulp from 'gulp';
 import browserSync from 'browser-sync';
 import del from 'del';
-import terser from 'gulp-terser';
+import webpack from 'webpack';
+import webpackStream from 'webpack-stream';
+// import terser from 'gulp-terser';
 // import gulpImg from 'gulp-image';
 
 const html = () => gulp
@@ -20,7 +22,17 @@ const css = () => gulp
 
 const js = () => gulp
     .src('src/scripts/**/*.js')
-    .pipe(terser())
+    .pipe(webpackStream({
+        mode: 'production',
+        devtool: false,
+        optimization: {
+            minimize: true//false if terser
+        },
+        output: {
+            filename: 'index.js'
+        }
+    }, webpack))
+    // .pipe(terser())
     .pipe(gulp.dest('dist/scripts'))
     .pipe(browserSync.stream());
 

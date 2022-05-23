@@ -212,7 +212,8 @@
                 padding: 0;
             }
             &-item {
-                background: linear-gradient(149deg, rgb(144, 38, 119) 20%, rgb(196, 204, 78) 42%, rgb(93, 55, 146) 72%, rgb(52, 160, 90) 100%) no-repeat center/cover fixed;
+                // background: linear-gradient(149deg, rgb(144, 38, 119) 20%, rgb(196, 204, 78) 42%, rgb(93, 55, 146) 72%, rgb(52, 160, 90) 100%) no-repeat center/cover fixed;
+                background: linear-gradient(-149deg, rgb(116, 177, 137) 20%, rgb(80, 129, 174) 42%, rgb(206, 133, 96) 72%, rgb(206, 206, 206) 100%) no-repeat center/cover fixed;
                 animation: bg-gradient 10s infinite linear;
                 background-size: 400%;
                 border-radius: 50%;
